@@ -21,8 +21,7 @@
     while (temp >= 0) {
         TransactionBlock current = list.get(temp);
         Integer value = current.get(key);
-
-         switch (value) {
+        switch (value) {
             case Integer.MIN_VALUE: temp--;                                    
                                     break;
             case Integer.MAX_VALUE: return Integer.MAX_VALUE;
