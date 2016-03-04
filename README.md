@@ -1,6 +1,6 @@
 # Simple Database Challenge
 
-This is the solution to Server(Back-end) Simple Database challenge in Java.
+This is the solution to Server(Back-end) Simple Database challenge (goo.gl/W2Cz29) in Java.
 
 The building block of a database is a transaction block.
 The transaction block class has 2 maps:  
