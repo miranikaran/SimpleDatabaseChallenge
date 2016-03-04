@@ -11,16 +11,14 @@ public class TransactionBlock {
   public TransactionBlock(){
 	  map = new HashMap<String,Integer>();
 	  count = new HashMap<Integer,Integer>();
-	  isInProgress = false;
-	  
+	  isInProgress = false;	  
   }
 
   // sets key to value and updates number of variables mapped to value
   public void set(String key, Integer value,Integer counterValue){
 	  map.put(key, value);
 	  count.put(value, counterValue);
-  }
-  
+  }  
   
   // returns count of variables mapped to value  
   public Integer numequalto(int value){
@@ -46,13 +44,13 @@ public class TransactionBlock {
 		  else return value;
 	  }
 	  else return Integer.MIN_VALUE;	  
-  }
-  
+  }  
  
   //returns the state of transaction
   public boolean isInProgress(){
 	  return isInProgress;
   }
+
  //toggles the state of transaction
  public void toggle(){
 	  isInProgress = !isInProgress;
