@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 public class SimpleDatabaseChallenge {
    
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 		
       Database d = new Database();
       Scanner kbd;
@@ -11,6 +11,7 @@ public class SimpleDatabaseChallenge {
       System.out.println("Enter 1 for interactive mode");
       System.out.println("Enter 2 to use a file");
       int mode = kbd.nextInt();
+      //check mode of interaction
        if(mode == 2)
        {
     	   System.out.println("Enter file path");
@@ -67,7 +68,7 @@ public class SimpleDatabaseChallenge {
       
       
     
-	}
+  }
 
 	
 	
