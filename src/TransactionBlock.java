@@ -28,13 +28,12 @@ public class TransactionBlock {
   // maps key to null and updates count map
  public void unset(String key,Integer counterKey,Integer counterValue) {
 	  map.put(key, null);
-	  count.put(counterKey, counterValue);
-	  
+	  count.put(counterKey, counterValue);	  
   }
   
  /* returns the value of key if key is present
-    returns Integer.MAX_VALUE if unset operation was used for the key
-    returns Integer.MIN_VALUE if no operation has been used for the key*/
+  * returns Integer.MAX_VALUE if unset operation was used for the key
+  * returns Integer.MIN_VALUE if no operation has been used for the key*/
   public Integer get(String key){	  
 	  if(map.containsKey(key))  
 	  {
